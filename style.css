@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 100vh;
+}
+
+body{
+    background-image: url("bilder/kjokken.png");
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#bakgrunn {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#bjorn {
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    left: 37%;
+    bottom: 80px;
+}
+
+#bord{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    left: 17%;
+    bottom: 0px;
+
+}
