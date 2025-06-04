@@ -37,3 +37,17 @@ body{
     bottom: 0px;
 
 }
+
+.ingredienser {
+    position: absolute;
+    bottom: 20px;
+    right: 290px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.ingrediens {
+    width: 90px;
+    height: auto;
+}
