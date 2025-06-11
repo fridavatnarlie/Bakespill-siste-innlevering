@@ -51,3 +51,10 @@ body{
     width: 90px;
     height: auto;
 }
+
+#bolle{
+    position: absolute;
+    bottom: 20px;
+    right: 515px;
+    height: 230px;
+}
