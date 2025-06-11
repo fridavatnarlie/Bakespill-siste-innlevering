@@ -54,7 +54,16 @@ body{
 
 #bolle{
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 515px;
     height: 230px;
+}
+
+#timer{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 48px;
+    color: pink;
 }
