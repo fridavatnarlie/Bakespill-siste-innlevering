@@ -41,28 +41,25 @@ ingredienser.forEach(function(ingrediens){
             fullbolle.style.height = "230px"
 
             klarForSteking = true
+            document.getElementById("instruksjon").textContent = "Klikk på bollen for å steke kaken!"
 
         }
     })
 })
 
-fullbolle.addEventListener("click", function() {
+fullbolle.addEventListener("click", function () {
     if (klarForSteking) {
         fullbolle.style.display = "none"
+        kake.style.display = "block"
+        kake.style.position = "absolute"
+        kake.style.bottom = "30px"
+        kake.style.right = "500px"
+        kake.style.height = "230px"
+
+        document.getElementById("instruksjon").textContent = "Kaken er klar. Bra jobbet!"
         klarForSteking = false
     }
 });
-
-
-fullbolle.addEventListener("click", function () {
-    fullbolle.style.display = "none"
-    kake.style.display = "block"
-    kake.style.display = "block"
-    kake.style.position = "absolute"
-    kake.style.bottom = "30px"
-    kake.style.right = "500px"
-    kake.style.height = "230px"
-})
 
 
 
