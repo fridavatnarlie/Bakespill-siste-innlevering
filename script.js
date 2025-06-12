@@ -3,6 +3,7 @@
 const ingredienser = document.querySelectorAll(".ingrediens")
 const bolle = document.getElementById("bolle")
 const fullbolle = document.getElementById("fullbolle")
+const kake = document.getElementById("kake")
 
 const timerElm = document.getElementById("timer")
 
@@ -48,33 +49,21 @@ ingredienser.forEach(function(ingrediens){
 fullbolle.addEventListener("click", function() {
     if (klarForSteking) {
         fullbolle.style.display = "none"
-        startTimer(10)
         klarForSteking = false
     }
 });
 
-function visKake() {
+
+fullbolle.addEventListener("click", function () {
+    fullbolle.style.display = "none"
+    kake.style.display = "block"
     kake.style.display = "block"
     kake.style.position = "absolute"
     kake.style.bottom = "30px"
     kake.style.right = "500px"
     kake.style.height = "230px"
-}
+})
 
-function startTimer(sekunder) {
-    let tidIgjen = sekunder
-    timerElm.textContent = tidIgjen
-    timerElm.style.display = "block"
 
-    const nedtelling = setInterval(() => {
-        tidIgjen--
-        timerElm.textContent = tidIgjen
 
-        if (tidIgjen <= 0) {
-            clearInterval(nedtelling)
-            timerElm.style.display = "none"
-            visKake()
-        }
-    }, 1000);
-}
 
